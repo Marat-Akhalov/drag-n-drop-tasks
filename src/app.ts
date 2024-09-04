@@ -1,2 +1,3 @@
+import './assets/main.scss';
+
 console.log('Hello');
-console.log('bye');
