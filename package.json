@@ -1,0 +1,38 @@
+{
+  "name": "drag-n-drop-tasks",
+  "version": "1.0.0",
+  "description": "Simple task manager with drag-n-drop logic",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack serve --env mode=development",
+    "build:dev": "webpack --env mode=development",
+    "build:prod": "webpack --env mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marat-Akhalov/drag-n-drop-tasks.git"
+  },
+  "keywords": [
+    "Typescript",
+    "Webpack"
+  ],
+  "author": "Marat Zaynulabidov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marat-Akhalov/drag-n-drop-tasks/issues"
+  },
+  "homepage": "https://github.com/Marat-Akhalov/drag-n-drop-tasks#readme",
+  "devDependencies": {
+    "@types/node": "^22.5.3",
+    "@types/webpack": "^5.28.5",
+    "@types/webpack-dev-server": "^4.7.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
