@@ -1,7 +1,6 @@
 .projects {
   border: 2px solid var(--clr-primary-dark);
   width: 100%;
-  min-height: 80px;
 
   &__header {
     margin: 0;
@@ -15,7 +14,12 @@
     gap: 8px;
     margin: 0;
     padding: 12px;
+    min-height: 60px;
     list-style: none;
+
+    &.droppable {
+      background-color: rgba($color: #0adce4, $alpha: 0.5);
+    }
   }
 
   &__item {
