@@ -15,8 +15,6 @@ export abstract class Component<T extends HTMLElement, U extends HTMLElement> {
 
     this.hostElement = document.getElementById(hostElement)! as T;
 
-    console.log(this.templateElement);
-
     const importedNode = document.importNode(
       this.templateElement.content,
       true

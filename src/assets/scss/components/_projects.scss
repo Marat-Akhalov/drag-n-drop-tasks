@@ -1,0 +1,12 @@
+.projects {
+  border: 2px solid var(--clr-primary-dark);
+  width: 100%;
+  min-height: 80px;
+
+  &__header {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 8px;
+    background-color: var(--clr-primary-dark);
+  }
+}
