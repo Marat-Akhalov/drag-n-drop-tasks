@@ -1,3 +1,4 @@
 import './assets/scss/main.scss';
+import { ProjectInput } from './components/project-input';
 
-console.log('Hello');
+new ProjectInput();

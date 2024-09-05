@@ -9,11 +9,13 @@ export abstract class Component<T extends HTMLElement, U extends HTMLElement> {
     insertAtStart: boolean,
     newElementId?: string
   ) {
-    this.templateElement = document.querySelector(
+    this.templateElement = document.getElementById(
       templateId
     )! as HTMLTemplateElement;
 
-    this.hostElement = document.querySelector(hostElement)! as T;
+    this.hostElement = document.getElementById(hostElement)! as T;
+
+    console.log(this.templateElement);
 
     const importedNode = document.importNode(
       this.templateElement.content,
