@@ -6,9 +6,9 @@ export class ProjectItem extends Component<HTMLUListElement, HTMLLIElement> {
 
   get persons() {
     if (this.project.people === 1) {
-      return ' person';
+      return `${this.project.people} person`;
     } else {
-      return `${this.project.people} assigned`;
+      return `${this.project.people} persons`;
     }
   }
 
@@ -24,7 +24,7 @@ export class ProjectItem extends Component<HTMLUListElement, HTMLLIElement> {
 
   renderContent(): void {
     this.element.querySelector('h2')!.textContent = this.project.title;
-    this.element.querySelector('h3')!.textContent = this.persons + 'assigned';
+    this.element.querySelector('h3')!.textContent = this.persons + ' assigned';
     this.element.querySelector('p')!.textContent = this.project.description;
   }
 }
